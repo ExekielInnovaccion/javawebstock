@@ -17,7 +17,7 @@ yarn add express     agrega dependencia node.js   (Servidor escucha)
 
 
 app.js
-#codigo obsetenido de nodejs/acercade en pagina nodejs.org
+#codigo obsetenido de nodejs/acercade en pagina nodejs.org conexion
 
 const express =require('express')
 const app =express()
@@ -57,6 +57,14 @@ Comience con un crédito de Azure de USD200*
 se Instalo GIT
 http://git-scm.com/download/win
 git --version
+git init    genera carpeta oculta en proyecto
+
+se agrega archivi llamado .gitignore  y dentro la linea  /node_modules    al subirlos ignorara esa carpeta
+
+git remote add origin https://github.com/ExekielInnovaccion/javawebstock.git
+git status
+git add .     los sube
+git status   iundica que tuvo cambio
 
 
 
