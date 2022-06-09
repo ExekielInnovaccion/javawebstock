@@ -1,0 +1,63 @@
+PLATAFORMAS: VERCEL HOST, AZURE, MONGO DB
+LIBRERIAS: NODE.JS, EXPRES, REACT
+
+YARN: PARA CONTROL DE INSTALACION DE PACKAGES
+GIT: CONTROL DE CODIGO
+
+INSTALAR VS CODE
+instala node js
+https://nodejs.org/en/
+
+Instala yarn
+https://marketplace.visualstudio.com/items?itemName=gamunu.vscode-yarn
+
+yarn --version
+yarn --init     crea espacio de trabajo
+yarn add express     agrega dependencia node.js   (Servidor escucha) 
+
+
+app.js
+#codigo obsetenido de nodejs/acercade en pagina nodejs.org
+
+const express =require('express')
+const app =express()
+app.get('/',(    req , res   )=>{
+    console.log('Peticion Recibida')
+    res.send('Hola Mundo!°!')
+})
+app.listen(4000,()=>{
+    console.log('Servidor escuchando en puerto 4000')
+})
+
+node app.js     activa app
+
+si en navegador ponemos localhost:4000 se activa app
+si hacemos cambios en codigo necesitamos detener en la Terminal con CTRL+C
+Se necesita reiniciar servidor
+instalar nodemon
+yarn add nodemon -D
+yarn nodemon -D   "D" es dependencia de Desarrollo no de produccion
+
+Reiniciar  nodemon app.js
+En package.Json se puede agregar Script a fin de escribir ese comando mas amigable
+"scripts":{
+"dev":"nodemon app.js"
+}
+
+despues ejecutar en terminal 
+yarn dev
+
+Montarlo en AZURE
+https://azure.microsoft.com/es-mx
+Servicios populares gratuitos durante 12 meses
+40+ otros servicios gratis siempre
++
+Comience con un crédito de Azure de USD200*
+
+se Instalo GIT
+http://git-scm.com/download/win
+git --version
+
+
+
+
