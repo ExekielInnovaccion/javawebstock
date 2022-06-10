@@ -65,7 +65,23 @@ git remote add origin https://github.com/ExekielInnovaccion/javawebstock.git
 git status
 git add .     los sube
 git status   iundica que tuvo cambio
+git remote -v para saber si existe el espacio y esta listo
 
 
+asi siempre al modifiar
+git status
+git add .     los sube
+git status   iundica que tuvo cambio
+git commit -m "se quieto signs de admiracion de respuesta"
+git push
+
+generar un paquete de entorno pára variables, necesaria para cuando se suba a servidor remoto
+yarn add dotenv
+
+se agrega archivo llamado .gitignore  y dentro la linea  archivo .env  en donde se encuenta la variable de entorno PORT la cual sera asignada por AZURE    al subirlos ignorara esa carpeta
+
+
+Cuando se tenga la carpeta de entorno otorgada por azure se agregara a github
+git pull 
 
 

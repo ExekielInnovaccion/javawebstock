@@ -11,16 +11,18 @@ app.listen(4000,()=>{
 
 }) */
 const http = require('http');
-
+require ('dotenv').config()
 const hostname = '127.0.0.1';
-const port = 4000;
+const PORT = process.env.PORT //|| 4000
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
+  console.log("Peticion Recibida")
 //   res.setHeader('Content-Type', 'text/plain');
-  res.end('<H1>Hola Mundo!</H1>');
+  //res.end('<H1>Hola Mundo!</H1>');
+  res.status(200).sendfile('index.html')
 });
 
-server.listen(port, hostname, () => {
-  console.log(`El servidor se está ejecutando en http://${hostname}:${port}/`);
+server.listen(PORT, hostname, () => {
+  console.log(`El servidor se está ejecutando en http://${hostname}:${PORT}/`);
 });
