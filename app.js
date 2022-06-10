@@ -1,28 +1,23 @@
-/* const express =require('express')
+const express =require('express')
+const path=require('path')
+const { nextTick } = require('process')
+const { prototype } = require('stream')
+
+require('dotenv').config()
 const app =express()
 
-app.get('/',(    req , res   )=>{
-    console.log('Peticion Recibida')
-    res.send('<h1>Hola Mundo!°!</h1>')
-})
+app.use(express.static(path.join(__dirname,'public')))
 
-app.listen(4000,()=>{
-    console.log('Servidor escuchando en puerto 4000')
+//app.get('/',(    req , res ,next  )=>{
+    //console.log('Peticion Recibida')
+    //res.send('<h1>Hola Mundo!°!</h1>')
+    //res.status(200).sendFile('ind ex.html',{root: __dirname})
+    //next()  //next es fundamental si tuvieramos mas de 1 midlewhere
+//})
 
-}) */
-const http = require('http');
-require ('dotenv').config()
-const hostname = '127.0.0.1';
-const PORT = process.env.PORT //|| 4000
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  console.log("Peticion Recibida")
-//   res.setHeader('Content-Type', 'text/plain');
-  //res.end('<H1>Hola Mundo!</H1>');
-  res.status(200).sendfile('index.html')
-});
+const PORT =process.env.PORT
 
-server.listen(PORT, hostname, () => {
-  console.log(`El servidor se está ejecutando en http://${hostname}:${PORT}/`);
-});
+app.listen(PORT,()=>{
+    console.log('Servidor escuchando en puerto ' + PORT)
+}) 

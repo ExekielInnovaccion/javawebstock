@@ -1,3 +1,5 @@
+https://github.com/mgesudev/stock-app
+
 PLATAFORMAS: VERCEL HOST, AZURE, MONGO DB
 LIBRERIAS: NODE.JS, EXPRES, REACT
 
@@ -84,4 +86,10 @@ se agrega archivo llamado .gitignore  y dentro la linea  archivo .env  en donde 
 Cuando se tenga la carpeta de entorno otorgada por azure se agregara a github
 git pull 
 
+Video 1
+https://www.youtube.com/watch?v=Dk69gk6NHKU
+Video 2
+https://www.youtube.com/watch?v=2VmofdpfkxU
+Video 3
 
+Video 4
