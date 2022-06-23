@@ -1,3 +1,11 @@
 h1{
     color:rebeccapurple;
 }
+.form-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+}
+input{
+    margin-bottom: 0.5rem;
+}

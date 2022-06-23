@@ -93,3 +93,29 @@ https://www.youtube.com/watch?v=2VmofdpfkxU
 Video 3
 
 Video 4
+
+
+MongoDB
+https://www.mongodb.com/es/cloud/atlas/azure-mongodb
+empresa: student
+ceinnova13040@innovaccion.mx
+Exekiel
+123mongo456
+
+
+la base de datos tiene
+user: exeuser
+pass: RFJfKb3Sg2Ri5VaN
+
+
+dbmongoproductos
+mongodb+srv://exeuser:<password>@cluster0.ztr4q.mongodb.net/?retryWrites=true&w=majority
+
+
+
+Descargar Mongoose para poder hacer la concexion en proyecto al Base de Mongodb
+yarn add mongoose
+
+
+
+
